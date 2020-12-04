@@ -29,6 +29,7 @@
 * [Development](#development)
   * [Prerequisites](#prerequisites)
   * [Setup](#setup)
+  * [Debugging](#Debugging)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -86,6 +87,12 @@ cp iohook\uiohook.dll node_modules\iohook\builds\electron-v80-win32-x64\build\Re
 ```JS
 yarn dev
 ```
+
+### Debugging
+Using VS Code, it is easy to debug using the two launch configs provided. The configs allow you to attach to the electron node process as well as the renderer using the [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) VS Code extension.
+
+1. Run the project `yarn dev`
+2. Attach to the electron and/or renderer using VS Code's `Run` sidebar menu item.
 
 <!-- CONTRIBUTING -->
 ## Contributing

@@ -11,6 +11,8 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 // global reference to mainWindow (necessary to prevent window from being garbage collected)
 let mainWindow: BrowserWindow | null;
 
+app.commandLine.appendSwitch('remote-debugging-port', '9222');
+app.commandLine.appendSwitch('userDataDir', 'true');
 app.commandLine.appendSwitch('disable-pinch');
 
 const gotTheLock = app.requestSingleInstanceLock();
